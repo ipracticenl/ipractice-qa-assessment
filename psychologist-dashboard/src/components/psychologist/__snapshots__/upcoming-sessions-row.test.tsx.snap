@@ -1,0 +1,141 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UpcomingSessionsRow > Snapshot Tests > should match snapshot when client data is loaded 1`] = `
+<div>
+  <tr
+    class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+    data-testid="session-row-session-1"
+  >
+    <td
+      class="p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium"
+    >
+      <div
+        class="flex flex-col"
+      >
+        <span>
+          01/15/2024
+        </span>
+        <span
+          class="text-sm text-gray-600"
+        >
+          10:00
+           - 
+          11:00
+        </span>
+      </div>
+    </td>
+    <td
+      class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+    >
+      John Doe
+    </td>
+    <td
+      class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+    >
+      <button
+        aria-label="Cancel session with John Doe on 01/15/2024 10:00"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+        data-testid="remove-session-session-1"
+      >
+        <svg
+          class="lucide lucide-user-minus w-3 h-3 mr-1"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+          />
+          <circle
+            cx="9"
+            cy="7"
+            r="4"
+          />
+          <line
+            x1="22"
+            x2="16"
+            y1="11"
+            y2="11"
+          />
+        </svg>
+        Cancel
+      </button>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`UpcomingSessionsRow > Snapshot Tests > should match snapshot when client data is loading 1`] = `
+<div>
+  <tr
+    class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+    data-testid="session-row-session-1"
+  >
+    <td
+      class="p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium"
+    >
+      <div
+        class="flex flex-col"
+      >
+        <span>
+          01/15/2024
+        </span>
+        <span
+          class="text-sm text-gray-600"
+        >
+          10:00
+           - 
+          11:00
+        </span>
+      </div>
+    </td>
+    <td
+      class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+    />
+    <td
+      class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+    >
+      <button
+        aria-label="Cancel session with undefined on 01/15/2024 10:00"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+        data-testid="remove-session-session-1"
+      >
+        <svg
+          class="lucide lucide-user-minus w-3 h-3 mr-1"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+          />
+          <circle
+            cx="9"
+            cy="7"
+            r="4"
+          />
+          <line
+            x1="22"
+            x2="16"
+            y1="11"
+            y2="11"
+          />
+        </svg>
+        Cancel
+      </button>
+    </td>
+  </tr>
+</div>
+`;

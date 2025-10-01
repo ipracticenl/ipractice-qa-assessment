@@ -1,0 +1,267 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "iPractice APIs",
+    "version": "v1"
+  },
+  "paths": {
+    "/client": {
+      "post": {
+        "summary": "Creates a new client.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CreateClientDto" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "The profile of the newly created client", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ClientDetailsDto" } } } }
+        }
+      }
+    },
+    "/client/{id}": {
+      "get": {
+        "summary": "Gets the profile of a client.",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "The profile of the client", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ClientDetailsDto" } } } },
+          "404": { "description": "Not found" }
+        }
+      }
+    },
+    "/client/{id}/available-timeslots": {
+      "get": {
+        "summary": "Get available slots from his two psychologists.",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "All time slots for the selected client", "content": { "application/json": { "schema": { "type": "array", "items": { "$ref": "#/components/schemas/AvailableTimeSlotsResult" } } } } }
+        }
+      }
+    },
+    "/client/{id}/bookings": {
+      "post": {
+        "summary": "Create an appointment for a given availability slot",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CreateBookingDto" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "The newly created booking", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Appointment" } } } }
+        }
+      }
+    },
+    "/client/{id}/bookings/{appointmentId}": {
+      "delete": {
+        "summary": "Cancels an appointment",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } },
+          { "name": "appointmentId", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "204": { "description": "No Content, if appointment was cancelled" }
+        }
+      }
+    },
+    "/psychologist": {
+      "post": {
+        "summary": "Creates a new psychologist.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CreatePsychologistDto" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "The profile of the newly created psychologist", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/PsychologistDetailsDto" } } } }
+        }
+      }
+    },
+    "/psychologist/{id}": {
+      "get": {
+        "summary": "Gets the profile of a psychologist.",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "The profile of the psychologist", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/PsychologistDetailsDto" } } } },
+          "404": { "description": "Not found" }
+        }
+      }
+    },
+    "/psychologist/{id}/clients": {
+      "post": {
+        "summary": "Assigns a new client to a psychologist.",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ClientDto" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "The profile of the psychologist", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/PsychologistDetailsDto" } } } }
+        }
+      }
+    },
+    "/psychologist/{id}/available-timeslots": {
+      "post": {
+        "summary": "Creates a new available timeslot for a psychologist",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/TimeSlotDto" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "The profile of the psychologist", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/PsychologistDetailsDto" } } } }
+        }
+      }
+    },
+    "/psychologist/{id}/available-timeslots/{timeSlotId}": {
+      "patch": {
+        "summary": "Updates an existing available timeslot for a psychologist",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } },
+          { "name": "timeSlotId", "in": "path", "required": true, "schema": { "type": "string" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/TimeSlotDto" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "The profile of the psychologist", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/PsychologistDetailsDto" } } } }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateClientDto": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "initialPsychologistIds": { "type": "array", "items": { "type": "integer" } }
+        },
+        "required": ["name", "initialPsychologistIds"]
+      },
+      "ClientDetailsDto": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "assignedPsychologists": { "type": "array", "items": { "type": "integer" } }
+        }
+      },
+      "AvailableTimeSlotsResult": {
+        "type": "object",
+        "properties": {
+          "psychologistId": { "type": "integer" },
+          "availableTimeSlots": { "type": "array", "items": { "$ref": "#/components/schemas/TimeRange" } }
+        }
+      },
+      "TimeRange": {
+        "type": "object",
+        "properties": {
+          "from": { "type": "string", "format": "date-time" },
+          "to": { "type": "string", "format": "date-time" }
+        }
+      },
+      "CreateBookingDto": {
+        "type": "object",
+        "properties": {
+          "psychologistId": { "type": "integer" },
+          "availableTimeSlotId": { "type": "string" }
+        },
+        "required": ["psychologistId", "availableTimeSlotId"]
+      },
+      "Appointment": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "psychologistId": { "type": "integer" },
+          "clientId": { "type": "integer" },
+          "from": { "type": "string", "format": "date-time" },
+          "to": { "type": "string", "format": "date-time" }
+        }
+      },
+      "CreatePsychologistDto": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "initialClients": { "type": "array", "items": { "type": "integer" } }
+        },
+        "required": ["name", "initialClients"]
+      },
+      "PsychologistDetailsDto": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" },
+          "assignedClients": { "type": "array", "items": { "type": "integer" } },
+          "availableTimeSlots": { "type": "array", "items": { "$ref": "#/components/schemas/AvailableTimeSlot" } },
+          "bookedAppointments": { "type": "array", "items": { "$ref": "#/components/schemas/BookedAppointment" } }
+        }
+      },
+      "AvailableTimeSlot": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "from": { "type": "string", "format": "date-time" },
+          "to": { "type": "string", "format": "date-time" }
+        }
+      },
+      "BookedAppointment": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "clientId": { "type": "integer" },
+          "from": { "type": "string", "format": "date-time" },
+          "to": { "type": "string", "format": "date-time" }
+        }
+      },
+      "ClientDto": {
+        "type": "object",
+        "properties": {
+          "clientId": { "type": "integer" }
+        },
+        "required": ["clientId"]
+      },
+      "TimeSlotDto": {
+        "type": "object",
+        "properties": {
+          "from": { "type": "string", "format": "date-time" },
+          "to": { "type": "string", "format": "date-time" }
+        },
+        "required": ["from", "to"]
+      }
+    }
+  }
+} 

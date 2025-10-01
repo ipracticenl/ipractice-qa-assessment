@@ -1,0 +1,391 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EditAvailabilityPanel > Snapshot Tests > should match snapshot when availabilities exist 1`] = `
+<div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    data-testid="edit-availability-panel"
+  >
+    <div
+      class="flex flex-col space-y-1.5 p-6"
+    >
+      <div
+        class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"
+      >
+        <svg
+          class="lucide lucide-square-pen w-5 h-5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+          />
+          <path
+            d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+          />
+        </svg>
+        Edit Availability
+      </div>
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
+      <div
+        class="overflow-x-auto"
+      >
+        <div
+          class="relative w-full overflow-auto"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+          >
+            <thead
+              class="[&_tr]:border-b"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Time Slot
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Status
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                data-testid="availability-row-slot-1"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-center gap-1"
+                  >
+                    <span>
+                      Monday
+                    </span>
+                    <span
+                      class="text-sm text-gray-600"
+                    >
+                      10:00
+                       -
+                       
+                      11:00
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    aria-label="This slot is available"
+                    class="inline-flex px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800"
+                  >
+                    Available
+                  </span>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row gap-2"
+                  >
+                    <button
+                      aria-label="Edit availability slot for Monday 10:00"
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+                      data-testid="edit-availability-slot-1"
+                    >
+                      <svg
+                        class="lucide lucide-square-pen w-3 h-3 mr-1"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                        />
+                        <path
+                          d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                        />
+                      </svg>
+                      Edit
+                    </button>
+                    <button
+                      aria-label="Delete availability slot for Monday 10:00"
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+                      data-testid="delete-availability-slot-1"
+                    >
+                      <svg
+                        class="lucide lucide-trash2 w-3 h-3 mr-1"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                data-testid="availability-row-slot-2"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-center gap-1"
+                  >
+                    <span>
+                      Tuesday
+                    </span>
+                    <span
+                      class="text-sm text-gray-600"
+                    >
+                      14:00
+                       -
+                       
+                      15:00
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    aria-label="This slot is available"
+                    class="inline-flex px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800"
+                  >
+                    Available
+                  </span>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <div
+                    class="flex flex-col sm:flex-row gap-2"
+                  >
+                    <button
+                      aria-label="Edit availability slot for Tuesday 14:00"
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+                      data-testid="edit-availability-slot-2"
+                    >
+                      <svg
+                        class="lucide lucide-square-pen w-3 h-3 mr-1"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                        />
+                        <path
+                          d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+                        />
+                      </svg>
+                      Edit
+                    </button>
+                    <button
+                      aria-label="Delete availability slot for Tuesday 14:00"
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+                      data-testid="delete-availability-slot-2"
+                    >
+                      <svg
+                        class="lucide lucide-trash2 w-3 h-3 mr-1"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 6h18"
+                        />
+                        <path
+                          d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
+                        />
+                        <path
+                          d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
+                        />
+                        <line
+                          x1="10"
+                          x2="10"
+                          y1="11"
+                          y2="17"
+                        />
+                        <line
+                          x1="14"
+                          x2="14"
+                          y1="11"
+                          y2="17"
+                        />
+                      </svg>
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EditAvailabilityPanel > Snapshot Tests > should match snapshot when no availabilities exist 1`] = `
+<div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    data-testid="edit-availability-panel"
+  >
+    <div
+      class="flex flex-col space-y-1.5 p-6"
+    >
+      <div
+        class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"
+      >
+        <svg
+          class="lucide lucide-square-pen w-5 h-5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+          />
+          <path
+            d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
+          />
+        </svg>
+        Edit Availability
+      </div>
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
+      <div
+        class="overflow-x-auto"
+      >
+        <div
+          class="relative w-full overflow-auto"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+          >
+            <thead
+              class="[&_tr]:border-b"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Time Slot
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Status
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 text-center py-8 text-gray-500"
+                  colspan="3"
+                >
+                  No availability slots created yet
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

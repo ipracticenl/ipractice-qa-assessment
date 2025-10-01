@@ -1,0 +1,409 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAppointmentsPanel > Snapshot Tests > should match snapshot when appointments exist 1`] = `
+<div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    data-testid="my-appointments-panel"
+  >
+    <div
+      class="flex flex-col space-y-1.5 p-6"
+    >
+      <div
+        class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"
+      >
+        <svg
+          class="lucide lucide-calendar w-5 h-5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 2v4"
+          />
+          <path
+            d="M16 2v4"
+          />
+          <rect
+            height="18"
+            rx="2"
+            width="18"
+            x="3"
+            y="4"
+          />
+          <path
+            d="M3 10h18"
+          />
+        </svg>
+        <span
+          class="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold"
+        >
+          2
+        </span>
+        My Appointments
+      </div>
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
+      <div
+        class="overflow-x-auto"
+      >
+        <div
+          class="relative w-full overflow-auto"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+          >
+            <thead
+              class="[&_tr]:border-b"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Date & Time
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Psychologist
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Comments
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                data-testid="appointment-row-appointment-1"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium"
+                >
+                  <div
+                    class="flex flex-col"
+                  >
+                    <span>
+                      01/15/2024
+                    </span>
+                    <span
+                      class="text-sm text-gray-600 flex items-center gap-1"
+                    >
+                      <svg
+                        class="lucide lucide-clock w-3 h-3"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        />
+                        <polyline
+                          points="12 6 12 12 16 14"
+                        />
+                      </svg>
+                      10:00
+                       -
+                       
+                      11:00
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    <svg
+                      class="lucide lucide-user-check w-4 h-4 text-green-600"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                      />
+                      <circle
+                        cx="9"
+                        cy="7"
+                        r="4"
+                      />
+                      <polyline
+                        points="16 11 18 13 22 9"
+                      />
+                    </svg>
+                    Dr. John Smith
+                  </div>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="text-sm text-gray-400 italic"
+                  >
+                    No comments
+                  </span>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <button
+                    aria-label="Cancel appointment with Dr. John Smith on 01/15/2024 10:00"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+                    data-testid="cancel-appointment-appointment-1"
+                  >
+                    Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                data-testid="appointment-row-appointment-2"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 font-medium"
+                >
+                  <div
+                    class="flex flex-col"
+                  >
+                    <span>
+                      01/16/2024
+                    </span>
+                    <span
+                      class="text-sm text-gray-600 flex items-center gap-1"
+                    >
+                      <svg
+                        class="lucide lucide-clock w-3 h-3"
+                        fill="none"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                        />
+                        <polyline
+                          points="12 6 12 12 16 14"
+                        />
+                      </svg>
+                      14:00
+                       -
+                       
+                      15:00
+                    </span>
+                  </div>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <div
+                    class="flex items-center gap-2"
+                  >
+                    <svg
+                      class="lucide lucide-user-check w-4 h-4 text-green-600"
+                      fill="none"
+                      height="24"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
+                      />
+                      <circle
+                        cx="9"
+                        cy="7"
+                        r="4"
+                      />
+                      <polyline
+                        points="16 11 18 13 22 9"
+                      />
+                    </svg>
+                    Dr. Jane Doe
+                  </div>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <span
+                    class="text-sm text-gray-400 italic"
+                  >
+                    No comments
+                  </span>
+                </td>
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0"
+                >
+                  <button
+                    aria-label="Cancel appointment with Dr. Jane Doe on 01/16/2024 14:00"
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-destructive text-destructive-foreground hover:bg-destructive/90 h-9 rounded-md px-3 min-h-[36px] touch-manipulation"
+                    data-testid="cancel-appointment-appointment-2"
+                  >
+                    Cancel
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MyAppointmentsPanel > Snapshot Tests > should match snapshot when no appointments exist 1`] = `
+<div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    data-testid="my-appointments-panel"
+  >
+    <div
+      class="flex flex-col space-y-1.5 p-6"
+    >
+      <div
+        class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"
+      >
+        <svg
+          class="lucide lucide-calendar w-5 h-5"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 2v4"
+          />
+          <path
+            d="M16 2v4"
+          />
+          <rect
+            height="18"
+            rx="2"
+            width="18"
+            x="3"
+            y="4"
+          />
+          <path
+            d="M3 10h18"
+          />
+        </svg>
+        <span
+          class="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold"
+        >
+          0
+        </span>
+        My Appointments
+      </div>
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
+      <div
+        class="overflow-x-auto"
+      >
+        <div
+          class="relative w-full overflow-auto"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+          >
+            <thead
+              class="[&_tr]:border-b"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Date & Time
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Psychologist
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Comments
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 text-center py-8 text-gray-500"
+                  colspan="4"
+                >
+                  No appointments scheduled yet
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

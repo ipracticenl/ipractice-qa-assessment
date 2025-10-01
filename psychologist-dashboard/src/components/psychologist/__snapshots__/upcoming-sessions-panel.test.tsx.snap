@@ -1,0 +1,167 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UpcomingSessionsPanel > Snapshot Tests > should match snapshot when no sessions exist 1`] = `
+<div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    data-testid="upcoming-sessions-panel"
+  >
+    <div
+      class="flex flex-col space-y-1.5 p-6"
+    >
+      <div
+        class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"
+      >
+        <span
+          class="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold"
+        >
+          0
+        </span>
+        Upcoming Sessions
+      </div>
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
+      <div
+        class="overflow-x-auto"
+      >
+        <div
+          class="relative w-full overflow-auto"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+          >
+            <thead
+              class="[&_tr]:border-b"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Date & Time
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Client
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <td
+                  class="p-4 align-middle [&:has([role=checkbox])]:pr-0 text-center py-8 text-gray-500"
+                  colspan="3"
+                >
+                  No upcoming sessions scheduled
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`UpcomingSessionsPanel > Snapshot Tests > should match snapshot when sessions exist 1`] = `
+<div>
+  <div
+    class="rounded-lg border bg-card text-card-foreground shadow-sm"
+    data-testid="upcoming-sessions-panel"
+  >
+    <div
+      class="flex flex-col space-y-1.5 p-6"
+    >
+      <div
+        class="text-2xl font-semibold leading-none tracking-tight flex items-center gap-2"
+      >
+        <span
+          class="w-5 h-5 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xs font-bold"
+        >
+          2
+        </span>
+        Upcoming Sessions
+      </div>
+    </div>
+    <div
+      class="p-6 pt-0"
+    >
+      <div
+        class="overflow-x-auto"
+      >
+        <div
+          class="relative w-full overflow-auto"
+        >
+          <table
+            class="w-full caption-bottom text-sm"
+          >
+            <thead
+              class="[&_tr]:border-b"
+            >
+              <tr
+                class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+              >
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Date & Time
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Client
+                </th>
+                <th
+                  class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="[&_tr:last-child]:border-0"
+            >
+              <div
+                data-testid="session-row-session-1"
+              >
+                <span>
+                  Session 
+                  session-1
+                </span>
+                <button>
+                  Cancel
+                </button>
+              </div>
+              <div
+                data-testid="session-row-session-2"
+              >
+                <span>
+                  Session 
+                  session-2
+                </span>
+                <button>
+                  Cancel
+                </button>
+              </div>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
